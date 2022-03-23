@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+		<link rel = "stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="produtos.html">Produtos</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</nav>				
+			</div>			
+		</header>
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e Sobrenome:</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="nome-e-sobrenome">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"class="input-padrao" required placeholder="seuemail@dominio.com" >
+
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxxx-xxxx" class="input-padrao">
+				
+				<label for="mensagem">Mensagem:</label>
+				<textarea cols ="60" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+				<fieldset>
+					<legend>Como Prefere nosso Contato?</legend>
+					<label for="radio-email"><input type="radio" value="email" id="radio-email" name="contato">Email</label>
+					
+					<label for="radio-telefone"><input type="radio" id="radio-telefone" name="contato">Telefone</label>				
+
+					<label  for="radio-wpp"><input type="radio" id="radio-wpp" name="contato" checked>Whatsapp</label>
+					
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horario prefere ser atendido?</legend>
+					<select>					
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+				
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidade por email?</label>
+
+				<input type="submit" name="submit" value = "Enviar" class="enviar">
+
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>					
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					
+				</tbody>
+				
+				
+			</table>
+			
+		</main>
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyrigh Barbearia Alura - 2022</p>
+		</footer>
+	</body>		
+</html>
